@@ -2,15 +2,12 @@
   margin: 0px;
   padding: 0px;
 }
-header {
+#home {
   height: 100%;
   width: 100%;
   background-color: #b3fffc;
 }
 
-.introContainer {
-  margin: 0, auto;
-}
 nav {
   margin-right: 80px;
   font-family: "Times New Roman";
@@ -25,17 +22,25 @@ nav ul {
   margin-left: 80px;
   margin-right: 80px;
   display: flex;
-  justify-content: space-around;
-  background-color: red;
-}
-.nameText {
-  display: flex;
-  justify-self: center;
+  justify-content: space-between;
 }
 
+.left {
+  white-space: nowrap;
+  margin-left: 40px;
+  align-self: center;
+}
+
+.right {
+  white-space: nowrap;
+  margin-right: 40px;
+  align-self: center;
+  text-align: center;
+}
 .picture {
   width: 100vw;
   height: 80vh;
   display: flex;
   justify-content: center;
+  align-self: center;
 }
