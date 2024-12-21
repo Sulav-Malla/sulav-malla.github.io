@@ -1,11 +1,11 @@
 * {
   margin: 0px;
   padding: 0px;
+  background-color: #99e1d9;
 }
 #home {
   height: 100%;
   width: 100%;
-  background-color: #b3fffc;
 }
 
 nav {
@@ -17,6 +17,15 @@ nav {
 nav ul {
   display: flex;
   gap: 80px;
+}
+nav a {
+  font-weight: normal;
+  text-decoration: none;
+}
+nav a:active,
+nav a:focus,
+nav a:visited {
+  font-weight: normal;
 }
 .intro {
   margin-left: 80px;
