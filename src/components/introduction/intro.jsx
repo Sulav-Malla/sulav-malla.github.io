@@ -2,7 +2,7 @@ import "./intro.css";
 import personalPic from "../../assets/handwave.png";
 function Intro() {
   return (
-    <div>
+    <div id="home">
       <header>
         <div className="introContainer">
           <nav>
