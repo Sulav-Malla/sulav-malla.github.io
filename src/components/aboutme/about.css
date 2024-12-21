@@ -1,0 +1,13 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgreen;
+}
+
+.aboutHeader {
+  display: flex;
+
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
