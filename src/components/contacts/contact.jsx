@@ -22,7 +22,8 @@ function Contact() {
         <div className="contactLeft">
           <header className="contactHeader">Contact Me</header>
           <p className="contactDescription">
-            Feel free to message me. I'll get back to you as soon as possible.
+            Feel free to message me. <br></br>I'll get back to you as soon as
+            possible.
           </p>
         </div>
         <div className="contactFormContainer">

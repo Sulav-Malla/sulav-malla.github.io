@@ -1,8 +1,13 @@
 :root {
-  --licorice: #1c110aff; /* Add licorice color */
-  --vanilla: #e4d6a7ff; /* Add vanilla color */
-  --paynes-gray: #5d737eff; /* Add payne's gray color */
-  --pale-purple: #e5d4edff; /* Add pale purple color */
+  --licorice: #1c110aff;
+  --vanilla: #e4d6a7ff;
+  --paynes-gray: #5d737eff;
+  --pale-purple: #e5d4edff;
+  --rich-black: #01161eff;
+  --midnight-green: #124559ff;
+  --air-force-blue: #598392ff;
+  --ash-gray: #aec3b0ff;
+  --beige: #eff6e0ff;
 }
 
 #project,
@@ -10,15 +15,14 @@
 .projectDescription h2,
 .projectDescription p,
 .projectLinks {
-  color: var(--pale-purple); /* Make text pale purple */
+  color: black;
 }
 
 #project {
-  background: var(--paynes-gray); /* Change background to payne's gray */
+  background: var(--paynes-gray);
   width: 100%;
   padding: 2rem;
   box-sizing: border-box;
-  color: var(--pale-purple); /* Make text pale purple */
 }
 
 @keyframes fadeIn {
@@ -32,27 +36,27 @@
 
 .projectHeader {
   display: flex;
-  font-size: 3.5rem; /* Increase font size */
+  font-family: "Playfair", sans-serif;
+  font-size: 4rem;
   font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  justify-content: center;
-  opacity: 1; /* Make the header visible */
-  transition: none; /* Remove transition */
+  justify-content: flex-start;
+  transition: none;
 }
 
-.sectionDivider {
+.projectSectionDivider {
   border: 0;
   height: 1px;
-  background: black;
-  margin: 2rem 0;
+  background: white;
+  margin: 1.5rem 0;
 }
 
 .projectLinks {
   display: flex;
   flex-direction: row;
   align-self: center;
-  margin-bottom: 5%;
+  margin-bottom: 0.5rem;
 }
 
 .projectContainer {
@@ -64,13 +68,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1rem; /* Add a small gap between the image and the description */
-  transition: border 0.3s ease; /* Smooth transition for border */
+  gap: 1rem;
+  transition: border 0.3s ease;
 }
 
 .projectContent:hover {
-  border: none; /* Remove border on hover */
-  border-radius: 0; /* Remove border radius */
+  border: none;
+  border-radius: 0;
 }
 
 .projectPicture {
@@ -79,23 +83,24 @@
   display: flex;
   justify-content: center;
   align-self: center;
-  position: relative; /* Add position relative for hover effect */
+  position: relative;
 }
 
 .projectPicture img {
-  width: 200px; /* Set a fixed width */
-  height: 200px; /* Set a fixed height */
-  object-fit: cover; /* Ensure the image covers the area */
-  border-radius: 0.5rem; /* Add rounded corners */
-  transition: transform 0.3s ease; /* Smooth transition for transform */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+  border: 2px solid black; /* Add black border */
 }
 
 .projectPicture:hover img {
-  transform: scale(1.1); /* Pop up effect */
+  transform: scale(1.1);
 }
 
 .projectPicture:hover::after {
-  content: "See Repository"; /* Display text */
+  content: "See Repository";
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -104,25 +109,41 @@
   color: white;
   padding: 0.2rem 0.5rem;
   border-radius: 0.3rem;
-  font-size: 1rem; /* Increase font size */
+  font-size: 1rem;
   white-space: nowrap;
 }
 
 .projectDescription {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align descriptions to the top */
-  align-self: flex-start; /* Align descriptions to the top */
+  justify-content: flex-start;
+  align-self: flex-start;
   width: auto;
-  font-size: 1.25rem; /* Increase font size */
+  font-size: 1.25rem;
 }
 
 .projectDescription h2 {
   margin: 0;
-  color: var(--pale-purple); /* Make text pale purple */
+  font-family: "Merriweather", sans-serif;
 }
 
 .projectDescription p {
   margin: 0;
-  color: var(--pale-purple); /* Make text pale purple */
+  font-family: "Roboto", sans-serif;
+}
+
+.projectContent:nth-child(1) {
+  background-color: var(
+    --ash-gray
+  ); /* Set background color for calculator project */
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.projectContent:nth-child(2) {
+  background-color: var(
+    --beige
+  ); /* Set background color for Playfulingo project */
+  padding: 1rem;
+  border-radius: 0.5rem;
 }

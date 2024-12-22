@@ -5,8 +5,8 @@ import playfulLogo from "../../assets/playful_logo.png"; // Import Playfulingo l
 function Project() {
   return (
     <section id="project">
-      <header className="projectHeader">Projects</header>
-      <hr className="sectionDivider" />
+      <header className="projectHeader">Made with Code</header>
+      <hr className="projectSectionDivider" />
       <div className="projectContainer">
         <div className="projectContent">
           <a
