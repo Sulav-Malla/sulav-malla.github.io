@@ -1,30 +1,51 @@
 import "./project.css";
 import assetpic from "../../assets/calculator.jpg";
+import playfulLogo from "../../assets/playful_logo.png"; // Import Playfulingo logo
+
 function Project() {
   return (
     <section id="project">
       <header className="projectHeader">Projects</header>
+      <hr className="sectionDivider" />
       <div className="projectContainer">
-        <a
-          href="https://github.com/takeo-practical-session/Calculator-HTML-and-JS"
-          className="projectLinks"
-        >
-          <div className="projectContent">
+        <div className="projectContent">
+          <a
+            href="https://github.com/takeo-practical-session/Calculator-HTML-and-JS"
+            className="projectLinks"
+          >
             <div className="projectPicture">
               <img src={assetpic} alt="calculator"></img>
             </div>
-            <div className="projectDescription">
-              <h2>Calculator</h2>
-              <p>
-                A simple calculator that can perform basic arithmetic
-                operations. It was built using React.js. The calculator can
-                perform addition, subtraction, multiplication, division, and
-                modulo operations. The calculator also has different features
-                like a history log and has dark and light themes for the eyes.
-              </p>
-            </div>
+          </a>
+          <div className="projectDescription">
+            <h2>Calculator</h2>
+            <ul>
+              <li>Built using React.js</li>
+              <li>Performs basic arithmetic operations</li>
+              <li>Features a history log</li>
+              <li>Supports dark and light themes</li>
+            </ul>
           </div>
-        </a>
+        </div>
+        <div className="projectContent">
+          <a
+            href="https://github.com/shahks-hub/Playfulingo"
+            className="projectLinks"
+          >
+            <div className="projectPicture">
+              <img src={playfulLogo} alt="Playfulingo logo"></img>
+            </div>
+          </a>
+          <div className="projectDescription">
+            <h2>Playfulingo: ASL Learning APP</h2>
+            <ul>
+              <li>Implemented gesture detection</li>
+              <li>Designed the frontend</li>
+              <li>Helps users learn American Sign Language (ASL)</li>
+              <li>Interactive and engaging activities</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );
