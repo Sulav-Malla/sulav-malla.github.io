@@ -1,0 +1,117 @@
+:root {
+  --licorice: #1c110aff;
+  --vanilla: #e4d6a7ff;
+  --paynes-gray: #5d737eff;
+  --pale-purple: #e5d4edff;
+}
+
+#contact {
+  background-color: var(--pale-purple);
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: var(--paynes-gray);
+}
+
+.contactHeader {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  color: var(--paynes-gray);
+}
+
+.contactButton {
+  color: var(--paynes-gray);
+}
+
+.contactFormContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contactContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contactIcons img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contactIcons img:hover {
+  transform: scale(1.1);
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+}
+
+.contactForm label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: var(--paynes-gray);
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--paynes-gray);
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.contactForm textarea {
+  resize: vertical;
+}
+
+.contactPrompt {
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.contactButton {
+  align-self: flex-end;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--paynes-gray);
+  color: var(--pale-purple);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactButton:hover {
+  background-color: var(--licorice);
+}
+
+.contactButton:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.required {
+  color: red;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}

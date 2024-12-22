@@ -1,5 +1,5 @@
 import "./intro.css";
-import personalPic from "../../assets/handwave.png";
+import personalPic from "../../assets/intro_img.png";
 function Intro() {
   return (
     <div id="home">
