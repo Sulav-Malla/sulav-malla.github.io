@@ -21,6 +21,7 @@
   margin-bottom: 1rem;
   color: var(--paynes-gray);
 }
+
 .contactDescription {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
@@ -122,4 +123,44 @@
   color: red;
   font-size: 0.8rem;
   margin-top: 0.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 400px) {
+  .contactContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactFormContainer {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+
+  .contactIcons {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contactIcons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contactHeader {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .contactDescription {
+    font-size: 0.7rem;
+  }
+
+  .contactPrompt {
+    font-size: 0.7rem;
+  }
 }

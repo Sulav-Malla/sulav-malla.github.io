@@ -45,7 +45,7 @@ nav a,
   color: var(--vanilla);
 }
 #home {
-  height: 100vh;
+  height: auto;
   width: 100%;
   background: var(--licorice);
   box-sizing: border-box;
@@ -82,6 +82,7 @@ nav a:visited {
   margin-left: 80px;
   margin-right: 80px;
   display: flex;
+  height: auto;
   justify-content: space-between;
 }
 
@@ -125,9 +126,10 @@ nav a:visited {
 }
 
 .picture {
-  width: 100vw;
-  height: 80vh;
+  width: auto;
+  height: 600px;
   display: flex;
+  margin-bottom: 2%;
   justify-content: center;
   align-self: center;
   animation: fadeIn 2s;
@@ -158,4 +160,156 @@ nav a:visited {
 
 .fixedNavBar a:hover {
   font-weight: bold;
+}
+
+@media (max-width: 1100px) {
+  nav {
+    margin-right: 40px;
+  }
+  nav ul {
+    gap: 30px;
+  }
+  nav a {
+    font-size: 1.5rem;
+  }
+  nav a:hover {
+    font-size: 1.7rem;
+  }
+  .intro {
+    margin-left: 40px;
+    margin-right: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left {
+    margin-left: 0;
+    text-align: center;
+  }
+  .left h1 {
+    font-size: 3rem;
+  }
+  .left p {
+    font-size: 1rem;
+  }
+  .right {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    margin-right: 0;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .picture {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    margin-right: 20px;
+  }
+  nav ul {
+    gap: 20px;
+  }
+  nav a {
+    font-size: 1.25rem;
+  }
+  nav a:hover {
+    font-size: 1.45rem;
+  }
+  .intro {
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left {
+    margin-left: 0;
+    text-align: center;
+  }
+  .left h1 {
+    font-size: 2.5rem;
+  }
+  .left p {
+    font-size: 0.875rem;
+  }
+  .right {
+    margin-top: 20px;
+    margin-right: 0;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .picture {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  nav {
+    margin-right: 10px;
+  }
+  nav ul {
+    gap: 10px;
+  }
+  nav a {
+    font-size: 0.4rem;
+  }
+  nav a:hover {
+    font-size: 1.2rem;
+  }
+
+  .fixedNavBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--licorice);
+    justify-content: center;
+    border-radius: 0 0 0 0.5rem;
+    z-index: 1000;
+  }
+
+  .fixedNavBar ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0rem;
+    list-style-type: none;
+  }
+
+  .fixedNavBar a {
+    color: var(--vanilla);
+    text-decoration: none;
+    font-size: 0.5rem;
+  }
+
+  .fixedNavBar a:hover {
+    font-weight: bold;
+  }
+
+  .intro {
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left {
+    margin-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .left h1 {
+    font-size: 2rem;
+  }
+  .left p {
+    font-size: 0.75rem;
+  }
+  .right {
+    margin-top: 10px;
+    margin-right: 0;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .picture {
+    display: none;
+  }
 }

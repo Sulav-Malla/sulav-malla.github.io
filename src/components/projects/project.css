@@ -19,6 +19,8 @@
 }
 
 #project {
+  height: auto;
+  overflow: auto;
   background: var(--paynes-gray);
   width: 100%;
   padding: 2rem;
@@ -39,7 +41,7 @@
   font-family: "Playfair", sans-serif;
   font-size: 4rem;
   font-weight: 700;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
   justify-content: flex-start;
   transition: none;
@@ -47,9 +49,9 @@
 
 .projectSectionDivider {
   border: 0;
-  height: 1px;
+  height: 10px;
   background: white;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 .projectLinks {
@@ -92,7 +94,7 @@
   object-fit: cover;
   border-radius: 0.5rem;
   transition: transform 0.3s ease;
-  border: 2px solid black; /* Add black border */
+  border: 2px solid black;
 }
 
 .projectPicture:hover img {
@@ -133,17 +135,46 @@
 }
 
 .projectContent:nth-child(1) {
-  background-color: var(
-    --ash-gray
-  ); /* Set background color for calculator project */
+  background-color: var(--ash-gray);
   padding: 1rem;
   border-radius: 0.5rem;
 }
 
 .projectContent:nth-child(2) {
-  background-color: var(
-    --beige
-  ); /* Set background color for Playfulingo project */
+  background-color: var(--beige);
   padding: 1rem;
   border-radius: 0.5rem;
+}
+
+@media (max-width: 400px) {
+  .projectHeader {
+    font-size: 2rem;
+  }
+
+  .projectContent {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .projectPicture {
+    height: 150px;
+  }
+
+  .projectPicture img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .projectDescription {
+    font-size: 1rem;
+  }
+
+  .projectDescription h2 {
+    font-size: 1.5rem;
+  }
+
+  .projectDescription p {
+    font-size: 0.875rem;
+  }
 }

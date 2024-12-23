@@ -1,6 +1,6 @@
 import "./project.css";
 import assetpic from "../../assets/calculator.jpg";
-import playfulLogo from "../../assets/playful_logo.png"; // Import Playfulingo logo
+import playfulLogo from "../../assets/playful_logo.png";
 
 function Project() {
   return (
@@ -39,6 +39,7 @@ function Project() {
           <div className="projectDescription">
             <h2>Playfulingo: ASL Learning APP</h2>
             <ul>
+              <li>Made using Flutter</li>
               <li>Implemented gesture detection</li>
               <li>Designed the frontend</li>
               <li>Helps users learn American Sign Language (ASL)</li>
