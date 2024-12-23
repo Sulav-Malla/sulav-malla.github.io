@@ -17,29 +17,12 @@ import {
   walmartLogo,
   tmobileLogo,
 } from "../../assets/aboutCollection";
-import { useEffect } from "react";
 
 function About() {
-  useEffect(() => {
-    const handleScroll = () => {
-      const aboutHeader = document.querySelector(".aboutHeader");
-      const aboutSection = document.getElementById("about");
-      const sectionPosition = aboutSection.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight / 1.3;
-
-      if (sectionPosition < screenPosition) {
-        aboutHeader.classList.add("slideIn");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <section id="about">
-      <header className="aboutHeader">About Me</header>
-      <hr className="sectionDivider" />
+      <header className="aboutHeader">Meet the Developer</header>
+      <hr className="aboutSectionDivider" />
       <div className="aboutContent">
         <div className="aboutDescription">
           <p>
@@ -67,7 +50,7 @@ function About() {
         </div>
       </div>
       <div className="aboutSkills">
-        <h2>Skills</h2>
+        <h2>Technical Arsenal</h2>
         <ul className="languageLogos">
           <li data-title="C++">
             <img src={c_logo} alt="C++ logo" />
@@ -104,7 +87,7 @@ function About() {
         </ul>
       </div>
       <div className="aboutExperience">
-        <h2>Experience</h2>
+        <h2>The Path So Far...</h2>
         <ul>
           <li className="experienceItem">
             <img

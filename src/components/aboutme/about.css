@@ -3,6 +3,8 @@
   --vanilla: #e4d6a7ff;
   --paynes-gray: #5d737eff;
   --pale-purple: #e5d4edff;
+  --selective-yellow: #fabc2aff;
+  --pistachio: #8cd867ff;
 }
 
 #about {
@@ -16,32 +18,22 @@
   color: var(--licorice);
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 .aboutHeader {
   display: flex;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  opacity: 0;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  justify-content: flex-start;
+  font-family: "Playfair", sans-serif;
   color: var(--licorice);
 }
 
-.aboutHeader.slideIn {
-  animation: slideIn 0.5s forwards;
+.aboutSectionDivider {
+  border: 0;
+  height: 1px;
+  background: var(--licorice);
+  margin: 2rem 0;
 }
 
 .aboutContent {
@@ -63,7 +55,8 @@
 }
 
 .aboutDescription p {
-  font-family: tahoma;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
   font-weight: bold;
   color: var(--licorice);
 }
@@ -93,6 +86,13 @@
   border-radius: 0.5rem;
 }
 
+.aboutSkills {
+  margin-bottom: 0.9rem;
+  background-color: var(--selective-yellow);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
 .aboutSkills ul {
   display: flex;
   justify-content: center;
@@ -105,22 +105,28 @@
 .aboutSkills h2 {
   display: flex;
   justify-content: center;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  font-family: "Merriweather", sans-serif;
+  font-size: 2rem;
 }
 
 .aboutSkills h2,
 .aboutExperience h2 {
   color: var(--licorice);
   text-align: center;
-  font-size: 2.5rem;
-}
-
-.aboutSkills {
-  margin-bottom: 2rem;
 }
 
 .aboutExperience {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
+  background-color: var(--pistachio);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.aboutExperience h2 {
+  font-family: "Merriweather", sans-serif;
+  font-size: 2rem;
 }
 
 .languageLogos {
@@ -132,8 +138,8 @@
 }
 
 .aboutSkills li img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   transition: transform 0.3s ease;
   border: 2px solid var(--licorice);
   border-radius: 0.3rem;
@@ -176,7 +182,7 @@
 .experienceItem:hover {
   border: 2px solid var(--licorice);
   border-radius: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--pistachio);
   transform: scale(1.05);
 }
 
@@ -189,4 +195,5 @@
 .experienceDescription {
   color: var(--licorice);
   font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
 }
