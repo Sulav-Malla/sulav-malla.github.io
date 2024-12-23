@@ -150,6 +150,7 @@
   .contactContent {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
   .contactFormContainer {
     justify-content: center;
@@ -157,5 +158,12 @@
   .contactForm {
     width: 100%;
     max-width: 300px;
+  }
+  .contactIcons {
+    margin-top: 1rem;
+  }
+  .contactButton {
+    align-self: center;
+    margin-top: 1rem;
   }
 }
