@@ -5,7 +5,7 @@ import Contact from "../components/contacts/contact";
 
 function Home() {
   return (
-    <div style={{ overflow: "auto" }}>
+    <div>
       <Intro />
       <About />
       <Project />

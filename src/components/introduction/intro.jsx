@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 function Intro() {
   const [showNavBar, setShowNavBar] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +16,11 @@ function Intro() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div id="home">
       <header>
@@ -52,7 +58,10 @@ function Intro() {
       </header>
       {showNavBar && (
         <div className="fixedNavBar">
-          <ul>
+          <div className="menu-icon" onClick={toggleMenu}>
+            {showMenu ? "✖" : "☰"}
+          </div>
+          <ul style={{ display: showMenu ? "flex" : "none" }}>
             <li>
               <a href="#about">About</a>
             </li>

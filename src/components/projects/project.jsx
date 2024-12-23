@@ -1,6 +1,8 @@
 import "./project.css";
 import assetpic from "../../assets/calculator.jpg";
-import playfulLogo from "../../assets/playful_logo.png";
+import playfulLogo from "../../assets/playful_logo.jpg";
+import htmlDesignPic from "../../assets/html_design.png"; // Add image for HTML Web Design
+import responsiveDesignPic from "../../assets/responsive_design.png"; // Add image for Responsive Designs
 
 function Project() {
   return (
@@ -9,42 +11,61 @@ function Project() {
       <hr className="projectSectionDivider" />
       <div className="projectContainer">
         <div className="projectContent">
-          <a
-            href="https://github.com/takeo-practical-session/Calculator-HTML-and-JS"
-            className="projectLinks"
-          >
+          <div className="projectBox">
+            <div className="projectTitle">Calculator</div>
             <div className="projectPicture">
               <img src={assetpic} alt="calculator"></img>
             </div>
-          </a>
-          <div className="projectDescription">
-            <h2>Calculator</h2>
-            <ul>
-              <li>Built using React.js</li>
-              <li>Performs basic arithmetic operations</li>
-              <li>Features a history log</li>
-              <li>Supports dark and light themes</li>
-            </ul>
+            <div className="projectDescription">
+              <p>
+                A React.js application that performs basic arithmetic
+                operations, features a history log, and supports dark and light
+                themes.
+              </p>
+            </div>
           </div>
         </div>
         <div className="projectContent">
-          <a
-            href="https://github.com/shahks-hub/Playfulingo"
-            className="projectLinks"
-          >
+          <div className="projectBox">
+            <div className="projectTitle">Playfulingo: ASL Learning APP</div>
             <div className="projectPicture">
               <img src={playfulLogo} alt="Playfulingo logo"></img>
             </div>
-          </a>
-          <div className="projectDescription">
-            <h2>Playfulingo: ASL Learning APP</h2>
-            <ul>
-              <li>Made using Flutter</li>
-              <li>Implemented gesture detection</li>
-              <li>Designed the frontend</li>
-              <li>Helps users learn American Sign Language (ASL)</li>
-              <li>Interactive and engaging activities</li>
-            </ul>
+            <div className="projectDescription">
+              <p>
+                A Flutter app that helps users learn American Sign Language
+                (ASL) through interactive and engaging activities, featuring
+                gesture detection and a well-designed frontend.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="projectContent">
+          <div className="projectBox">
+            <div className="projectTitle">HTML Web Design</div>
+            <div className="projectPicture">
+              <img src={htmlDesignPic} alt="HTML Web Design"></img>
+            </div>
+            <div className="projectDescription">
+              <p>
+                A project showcasing modern HTML web design techniques, focusing
+                on clean and responsive layouts.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="projectContent">
+          <div className="projectBox">
+            <div className="projectTitle">Responsive Designs</div>
+            <div className="projectPicture">
+              <img src={responsiveDesignPic} alt="Responsive Designs"></img>
+            </div>
+            <div className="projectDescription">
+              <p>
+                A collection of responsive design examples, demonstrating
+                adaptability across various devices and screen sizes.
+              </p>
+            </div>
           </div>
         </div>
       </div>

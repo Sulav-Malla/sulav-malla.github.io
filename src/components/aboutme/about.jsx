@@ -34,8 +34,8 @@ function About() {
             I started college, I grew interested in coding and ended up with a
             bachelor's degree in Computer Science. Through that learning
             process, I grew passionate about software development and now I love
-            seeing the impact of code I create - wheth it's visible to the users
-            or running behind the scenes.
+            seeing the impact of code I create - whether it's visible to the
+            users or running behind the scenes.
           </p>
         </div>
         <div className="aboutImages">
@@ -70,8 +70,6 @@ function About() {
           <li data-title="SQL">
             <img src={sql_logo} alt="SQL logo" />
           </li>
-        </ul>
-        <ul className="frameworkLogos">
           <li data-title="Node.js">
             <img src={node_logo} alt="Node.js logo" />
           </li>
