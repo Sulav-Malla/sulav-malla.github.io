@@ -18,7 +18,7 @@ This is a React-based personal portfolio website showcasing my introduction, exp
 
 ### About Me
 
-- Highlights my skills, experience, and background.
+- Highlights my skills, experience(currently made up ones), and background.
 
 ### Projects
 
