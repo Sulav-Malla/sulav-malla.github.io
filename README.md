@@ -7,10 +7,10 @@ This is a React-based personal portfolio website showcasing my introduction, exp
 ## Features
 
 - **Smooth Intro Transitions**: Subtle animations enhance user experience.
-- **Flexible Navigation Bar**: Responsive and accessible navigation that adapts to different screen sizes. Becomes hamburger icon when scrolling down.
-- **Responsive Design**: Media query currently tested on multiple screen sizes so the components adjust according to device it is viewed on. Completely changes designs in some parts instead of just becoming smaller (mainly the about component).
+- **Flexible Navigation Bar**: Responsive and accessible navigation that adapts to different screen sizes. Becomes a hamburger icon when scrolling down.
+- **Responsive Design**: Media query currently tested on multiple screen sizes so the components adjust according to the device it is viewed on. Completely changes designs in some parts instead of just becoming smaller (mainly the about component).
 - **Email Functionality**: Directly send emails through the website. Email checks for valid email using regular expression.
-- **Clickable Links**: Links to projects and contact methods. You can directly check the public github repositories for my projects and access my social accounts.
+- **Clickable Links**: Links to projects and contact methods. You can directly check the public GitHub repositories for my projects and access my social accounts.
 
 ## Components
 
@@ -28,7 +28,7 @@ This is a React-based personal portfolio website showcasing my introduction, exp
 
 ### Contact
 
-- Allows users to email directly from the site and links to other contact methods (linkedin and github).
+- Allows users to email directly from the site and links to other contact methods (LinkedIn and GitHub).
 
 ## Usage
 
@@ -45,7 +45,32 @@ This portfolio website is intended for:
 
 ## Lessons Learned
 
-- **Responsive Design**: learned how to use media queries for responsive designs. Like changing sizes, displaying certain things only in certain skills and so on.
-- **Scrolling in Website**: learned some functions to handle what happens when users scroll past a certain section. Mainly from the navigation bar where users scrolling past the nav section put it in a hamburger icon.
-- **Hovering Effects**: learned about different aspects that can change by hovering/clicking on certain parts.
-- **CSS Knowledge**: learned and practiced CSS a lot, the most intensive part was this in the project.
+- **Responsive Design**: Learned how to use media queries for responsive designs. Like changing sizes, displaying certain things only in specific scenarios, and so on.
+- **Scrolling in Website**: Learned some functions to handle what happens when users scroll past a certain section. Mainly from the navigation bar where users scrolling past the nav section put it in a hamburger icon.
+- **Hovering Effects**: Learned about different aspects that can change by hovering/clicking on certain parts.
+- **CSS Knowledge**: Practiced CSS extensively, which was the most intensive part of this project.
+
+## How to Run This Project Locally
+
+To clone and run this project on your local machine, follow these steps:
+
+1. Open your terminal.
+2. Clone the public repository:
+
+   ```bash
+   git clone https://github.com/Sulav-Malla/sulav-malla.github.io
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and go to local link to view the website.
