@@ -45,7 +45,7 @@ This portfolio website is intended for:
 
 ## Lessons Learned
 
-- **Media Query**: learned how to use media queries for responsive designs. Like changing sizes, displaying certain things only in certain skills and so on.
+- **Responsive Design**: learned how to use media queries for responsive designs. Like changing sizes, displaying certain things only in certain skills and so on.
 - **Scrolling in Website**: learned some functions to handle what happens when users scroll past a certain section. Mainly from the navigation bar where users scrolling past the nav section put it in a hamburger icon.
 - **Hovering Effects**: learned about different aspects that can change by hovering/clicking on certain parts.
 - **CSS Knowledge**: learned and practiced CSS a lot, the most intensive part was this in the project.
