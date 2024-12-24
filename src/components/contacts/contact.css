@@ -129,41 +129,52 @@
   .contactHeader {
     font-size: 3rem;
   }
+
   .contactDescription {
     font-size: 1rem;
   }
+
   .contactPrompt p {
     font-size: 1rem;
   }
 }
-@media (max-width: 690px) {
+
+@media (max-width: 770px) {
   .contactHeader {
     font-size: 2rem;
     margin-top: 0rem;
   }
+
   .contactDescription {
     font-size: 0.7rem;
   }
+
   .contactPrompt p {
     font-size: 1rem;
   }
+
   .contactContent {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
+
   .contactFormContainer {
     justify-content: center;
   }
+
   .contactForm {
     width: 100%;
     max-width: 300px;
   }
+
   .contactIcons {
     margin-top: 1rem;
   }
+
   .contactButton {
     align-self: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
